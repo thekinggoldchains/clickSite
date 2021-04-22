@@ -1,12 +1,16 @@
+.flex {
+    display: flex;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-item-1{
+    flex: 1;
+}
 img{
     border-radius: 35px;
+    display: flex;
+    align-items: center;
+    max-width: 540px;
 }
 
-ul{
-    display: inline;
-    flex-direction: row;
-}
-
-li#img{
-    max-width: 540;
-}
