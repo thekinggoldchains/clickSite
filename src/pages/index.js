@@ -3,8 +3,9 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import  '../components/index.scss'
-import Cidades from '../components/cidades'
+import  '../components/cidades/index.scss'
+import  Cidades  from '../components/cidades/cidades'
+
 
 const IndexPage = () => (
   <Layout>

@@ -15,7 +15,7 @@ import {
   NavLink
 } from 'reactstrap';
 
-import logo from '../images/logo-site.png'
+import logo from '../images/Logo-site.png'
 
 const Header = (props) => {
   const [isOpen, setIsOpen] = useState(false);

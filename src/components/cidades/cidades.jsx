@@ -2,9 +2,10 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
-import Covilha from '../images/Covi.png'
-import CB from '../images/CB.png'
-import '../styles/index.scss'
+import Covilha from '../../images/covi.png'
+import CB from '../../images/CB.png'
+import './index.scss'
+
 
 const Cidades = ({ siteTitle }) => (
   <section className="flex flex-wrap">
