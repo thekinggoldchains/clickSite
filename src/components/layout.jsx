@@ -12,6 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Footer from "./footer"
 import "../styles/index.scss"
+import { Container } from "reactstrap"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -30,10 +31,10 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <div style={{backgroundColor: `#ffbb00`, height: `68px`}}>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div className='container' id='content'>
-        <main>{children}</main>
       </div>
+        <main>{children}</main>
       <Footer/>
     </>
   )

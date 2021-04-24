@@ -1,41 +1,53 @@
 .site-footer {
+  display: flex;
+  flex-direction: column;
   background-color: rgb(255, 187, 0);
   margin-top: 20px;
-  padding: 10px;
   text-align: center;
   bottom: 0;
+  padding: 10px;
   position: absolute;
   width: 100vw;
   height: 90px;
 
-  .footer-social-links {
-    text-align: center;
+}
 
-    ul.social-links-list {
-      li {
-        margin-right: 25px;
-        display: inline-block;
+.containerbrand{
+  display: flex;
+  max-width: 10%;
+  flex: 1 1;
+  justify-content: center;
+  margin-left: 45vw;
 
-        a {
-          color: $dark-gray;
-
-          &.instagram:hover {
-            color: #e95950;
-          }
-          &.facebook:hover {
-            color: rgb(66, 103, 178);
-          }
-          &.twitter:hover {
-            color: rgb(56, 161, 243);
-          }
-          &.google:hover {
-            color: rgb(221, 75, 57);
-          }
-          &.linkedin:hover {
-            color: rgb(0, 119, 181);
-          }
-        }
-      }
-    }
+}
+.containerfooter  {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  gap: 17px;
+  
+  .facebook {
+    color: rgb(66, 103, 178);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
   }
+  .instagram {
+    color: rgb(193,53,132);
+    justify-content: center;
+    align-items: center;
+  }
+  .whatsapp {
+    color: rgb(16, 201, 10);
+    justify-content: center;
+    align-items: center;
+  }
+
+  button{
+    background-color: transparent;
+    border: none;
+  }
+  
 }

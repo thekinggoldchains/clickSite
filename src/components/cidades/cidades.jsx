@@ -6,9 +6,18 @@ import Covilha from '../../images/covi.png'
 import CB from '../../images/CB.png'
 import './index.scss'
 
+import banner from '../../images/capa.png'
 
 const Cidades = ({ siteTitle }) => (
-  <section className="flex flex-wrap">
+  <>  
+  <section className='containerbanner' >
+    <div>
+      <img src={banner} alt="banner"/>
+    </div>
+  </section>
+  
+
+  <section className="containerCid">
     <div className="item">
       <Link to="/castelobranco">
         <img src={CB} alt="cb" />
@@ -20,6 +29,7 @@ const Cidades = ({ siteTitle }) => (
       </Link>
     </div>
   </section>
+  </>
 )
 
 Cidades.propTypes = {

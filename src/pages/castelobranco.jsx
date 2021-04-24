@@ -3,13 +3,21 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import CB from "../components/restaurantes/castelobranco/castelobranco"
+
+import '../components/restaurante.scss'
+
+
 
 const CasteloBranco = () => (
   <Layout>
+    <div className='geral'>
     <Seo title="Castelo Branco" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
+    <section className='containerRest'>
+    <CB />
+    </section>
+    </div>
+
   </Layout>
 )
 

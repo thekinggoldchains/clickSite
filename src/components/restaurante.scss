@@ -1,0 +1,27 @@
+.containerRest {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 17px;
+    justify-content: center;
+    margin-top: 9vh;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    padding: 20px;
+    flex: 1;
+    width: 1258px;
+    height: 629px;
+    max-width: 100%;
+    max-height: 100%;
+
+     &::-webkit-scrollbar {
+         display: none;
+     }
+}
+
+.geral{
+    justify-content: center;
+    align-items: center;
+    display: block;
+    flex-wrap: wrap;
+    
+}
