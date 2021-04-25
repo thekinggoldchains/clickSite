@@ -4,15 +4,24 @@
     padding: 10px;
     align-items: center;
     text-align: center;
-    height: 300px;
-    width: 200px;
+    height: 268px;
+    width: 180px;
     border-radius: 20px;
-    box-shadow: 5px  rgba($color: #000000, $alpha: 0.1);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-bottom: 0;
+    border: none;
+    position: relative;
+    animation: fadeIn .5s ease-in;
+    will-change: fadeIn, opacity;
+
+    .card#brevemente{
+        color: rgba($color: #000000, $alpha: 0.2) !important;
+    }
     
+
 }
 
 .card img{
-    border-radius: 15px;
     height: 168px;
     width: 162px;
 }
@@ -23,13 +32,51 @@
     font-size: 1rem;
     padding: 10px;
     font-weight: bold;
-    color: orange;  
+    color: orange; 
+    
 }
+
 
 .card:hover
 {
-        -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1);
-        
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.tag{
+    background-color: rgb(255, 0, 0);
+    width: 68px;
+    height: 68px;
+    position: absolute;
+    float: left;
+    left: 5px;
+    top: 2px;
+    border-radius: 35px;
+    
+    .free{
+        position: absolute;
+        top:5px;
+        left: 15px;
+        width: 32px;
+        height: 32px;
+        color: #fff;
+    }
+
+    p{
+        font-size: 0.6rem;
+        font-weight: bold;
+        color: #FFF;
+        position: absolute;
+        top: 12px;
+    }
+    svg{
+        background-color: #fff;
+    }
 }

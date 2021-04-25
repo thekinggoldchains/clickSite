@@ -29,18 +29,17 @@
   gap: 17px;
   
   .facebook {
-    color: rgb(66, 103, 178);
+    color: rgb(66, 103, 178) !important;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
   }
   .instagram {
-    color: rgb(193,53,132);
+    color: rgb(193,53,132) !important;
     justify-content: center;
     align-items: center;
   }
   .whatsapp {
-    color: rgb(16, 201, 10);
+    color: rgb(16, 201, 10) !important;
     justify-content: center;
     align-items: center;
   }
@@ -49,5 +48,9 @@
     background-color: transparent;
     border: none;
   }
-  
+
+  img{
+    border-radius: 15px;
+  }
+
 }

@@ -1,14 +1,15 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 
-import { FaFacebook, FaInstagramSquare, FaWhatsappSquare } from 'react-icons/fa';
-
 import '../styles/index.scss'
+import fb from '../images/facebook.png'
+import ig from '../images/instagram.png'
+import wpp from '../images/whatsapp.png'
 
 const Footer = ({ siteTitle }) => (
   <footer className="site-footer">
     <div>
-      <section className="geral">
+      <section>
         {/* <section className='containerbrand'>
         <div>
       <img style={{width:`20%`}} src={logo}/>
@@ -20,17 +21,28 @@ const Footer = ({ siteTitle }) => (
         </section>
 
         <section className="containerfooter">
-          <div className="facebook" >
-            <link href="https://www.facebook.com/ClickEntregasCB"
-              target="_blank">  
-            </link>
-            <FaFacebook size={32}/>
+          <div className="facebook">
+            <a
+              href="https://www.facebook.com/ClickEntregasCB"
+              target="_blank"
+              rel="fb"
+            >
+              <img src={fb} alt="fb" />
+            </a>
           </div>
           <div className="instagram">
-            <FaInstagramSquare size={32} />
+            <a
+              href="https://www.instagram.com/clickentregas_pt/"
+              target="_blank"
+              rel="fb"
+            >
+              <img src={ig} alt="fb" />
+            </a>
           </div>
           <div className="whatsapp">
-            <FaWhatsappSquare size={32} />
+            <a href="https://wa.me/351966361955" target="_blank" rel="fb">
+              <img src={wpp} alt="fb" />
+            </a>
           </div>
         </section>
       </section>
