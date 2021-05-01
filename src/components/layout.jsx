@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
       <div style={{backgroundColor: `#ffbb00`, height: `68px`}}>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       </div>
-        <main style={{backgroundColor: `#fff`}}>{children}</main>
+        <main style={{backgroundColor: `#fff`, marginBottom: `5rem`}}>{children}</main>
       <Footer/>
     </>
   )

@@ -4,8 +4,9 @@
     padding: 10px;
     align-items: center;
     text-align: center;
-    height: 268px;
-    width: 180px;
+    height: 15rem;
+    width: 10rem;
+    margin: 0px 1px 1px 1px;
     border-radius: 20px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     margin-bottom: 0;
@@ -22,16 +23,16 @@
 }
 
 .card img{
-    height: 168px;
-    width: 162px;
+    height: 8rem;
+    width: 7.5rem;
 }
 
 .card p{
     font-family: 'Roboto' sans-serif ;
-    margin-top: 15px;
-    font-size: 1rem;
     padding: 10px;
-    font-weight: bold;
+    margin-top: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
     color: orange; 
     
 }
@@ -68,13 +69,42 @@
         height: 32px;
         color: #fff;
     }
-
     p{
         font-size: 0.6rem;
-        font-weight: bold;
         color: #FFF;
         position: absolute;
-        top: 12px;
+        top: 5px;
+    }
+    svg{
+        background-color: #fff;
+    }
+
+}
+
+.novidade {
+    background-color: green;
+    width: 68px;
+    height: 68px;
+    position: absolute;
+    float: left;
+    left: 5px;
+    top: 2px;
+    border-radius: 35px;
+
+    .free{
+        position: absolute;
+        top:5px;
+        left: 12px;
+        width: 40px;
+        height: 40px;
+        color: #fff;
+    }
+    p{
+        font-size: 0.6rem;
+        color: #FFF;
+        position: absolute;
+        padding: 10px;
+        top: 10px;
     }
     svg{
         background-color: #fff;

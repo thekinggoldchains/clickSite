@@ -2,6 +2,8 @@ import * as React from "react"
 
 import  '../castelobranco/styles.scss'
 import free from '../../../images/free.png'
+import notificacao from '../../../images/notificacao.png'
+
 
 import amaya from '../../../images/amaya.png'
 import monumental from '../../../images/monumental.png'
@@ -10,14 +12,41 @@ import donpapao from '../../../images/donpapao.png'
 import mrcone from '../../../images/mr.cone.png'
 import pub from '../../../images/pub.png'
 import gelateria from '../../../images/logo1.png'
+import cava from '../../../images/cava.jpeg'
 
 const CV = (props) => {
 
     return (
       <>
         <div className="card">
+          <div className="novidade">
+            <img className="free" src={notificacao} />
+            <p>Novidade!</p>
+          </div>
           <a
-            href="https://www.restaurantlogin.com/ordering/restaurant/menu?company_uid=ce1d95a6-3e5b-4150-a32e-b538c63c3639&restaurant_uid=49459380-ef6d-4f19-9172-30ade05b40e6&facebook=true"
+            href="https://www.restaurantlogin.com/api/fb/z_o_yzk"
+            target="_blanck"
+          >
+            <img src={cava} alt="rest" />
+            <p> Cava Juliana</p>
+          </a>
+        </div>
+        <div className="card">
+          <div className="novidade">
+            <img className="free" src={notificacao} />
+            <p>Novidade!</p>
+          </div>
+          <a
+            href="https://www.restaurantlogin.com/api/fb/6x0_vp"
+            target="_blanck"
+          >
+            <img src={gelateria} alt="rest" />
+            <p>Gelataria D´Avó</p>
+          </a>
+        </div>
+        <div className="card">
+          <a
+            href="https://www.restaurantlogin.com/ordering/restaurant/menu?company_uid=ce1d95a6-3e5b-4150-a32e-b538c63c3639&restaurant_uid=0a7eaab6-1f70-4cfc-b504-da9fdabf71f3&facebook=true"
             target="_blanck"
           >
             <img src={amaya} alt="rest" />
@@ -72,15 +101,6 @@ const CV = (props) => {
             <img src={pub} alt="rest" />
             <p> Pub Tabacaria</p>
           </a>
-        </div>
-        <div className="card">
-          {/* <a
-            href=""
-            target="_blanck"
-          > */}
-            <img src={gelateria} alt="rest" />
-            <p>Gelateria D´Avó (Brevemente)</p>
-          {/* </a> */}
         </div>
       </>
     )
